@@ -126,7 +126,7 @@ class MwsOrderClientPack extends MwsOrderClient implements ThrottleAwareClientPa
             self::PARAM_NEXT_TOKEN => $nextToken,
         ];
 
-        return CaponicaClientPack::throttledCall($this, self::METHOD_LIST_ORDER_ITEMS, $requestArray);
+        return CaponicaClientPack::throttledCall($this, self::METHOD_LIST_ORDER_ITEMS_BY_NEXT_TOKEN, $requestArray);
     }
 
     // ###################################################
