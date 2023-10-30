@@ -35,7 +35,7 @@ class MarketplaceWebService_Model_ContentType  extends MarketplaceWebService_Mod
 	public function __construct($data = null) {
         $this->fields = array (
         'ContentType' => array('FieldValue' => null, 'FieldType' => 'string'),
-        'Parameters' => array('FieldValue' => null, 'FieldType' => array('string')),
+        'Parameters' => array('FieldValue' => [], 'FieldType' => array('string')),
         );
         
         parent::__construct($data);
